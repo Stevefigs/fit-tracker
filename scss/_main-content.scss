@@ -1,0 +1,24 @@
+main {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  grid-gap: 1rem;
+}
+
+ @media screen and ( min-width: 40em)// tablet //desktop 
+{
+
+main {
+  height:80%;
+  grid-column: 2;
+  grid-row: 2 / span 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto repeat(4, 1fr);
+  grid-gap: 1.5rem;
+    padding: 1rem 2rem 0 1rem;
+
+}
+}

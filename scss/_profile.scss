@@ -1,0 +1,281 @@
+.profile {
+  background: #f4f4f4;
+  border-radius: 1rem 1rem 1rem 1rem;
+  padding: 1em 1em 1em 1em;
+  box-shadow: 10px 4px 5px 0 rgba(0, 0, 0, 0.03), 
+  0 0 0 0 rgba(0, 0, 0, 0.2); 
+  grid-row: 1;
+  grid-column:1 / span 2;
+  display:grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 30px 1fr;
+  .corners{
+      padding: 1em;
+      grid-row: 1;
+      grid-column: 1 / span 2;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    .notify{
+          grid-column: 1;
+          grid-row: 1;
+      }
+      .nav{
+          grid-column: 2;
+          grid-row: 1;
+          justify-self: end;
+      }
+    }
+
+      .profileinfo{
+     display:none;   
+ 
+ 
+      }
+
+      .calday{
+      justify-self:start;
+      grid-row: 2;
+      grid-column: 1 / span 2;
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+        .flame{
+          grid-row:1 / span 2;
+          grid-column: 1;
+          justify-self: end;
+        }
+        .calnumber{
+          padding: 2rem 0 0 0;
+          grid-row:1;
+          grid-column: 2;
+          justify-self: start;
+        }
+        .textbtw{
+          font-size:1.5rem;
+          margin:0;
+          grid-row: 2;
+          grid-column:2;
+          justify-self: start;
+          margin-top:-10px;
+        }
+
+      }
+      .Emily{
+      display: none;
+      }
+
+      .Matthew{
+           display: none;
+      }
+
+      .Messo{
+           display: none;
+
+      }
+}
+  .settings{display:none}
+
+  .moprofileinfo{
+     background: #f4f4f4;
+     margin: 0 0 16px 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+  padding: 2em 3em 1em 3em;
+  box-shadow: 10px 4px 5px 0 rgba(0, 0, 0, 0.03), 
+  0 0 0 0 rgba(0, 0, 0, 0.2); 
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.mosettings{
+  display:block;
+  grid-row: 4;
+    grid-column: 1;
+padding:1rem;
+align-self:end;
+justify-self:start;
+}
+
+
+
+ @media screen and ( min-width: 40em)// tablet //desktop 
+    {
+      .profile {
+  height:100%;
+  background: #f4f4f4;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1em 1em 1em 1em;
+  box-shadow: 10px 4px 5px 0 rgba(0, 0, 0, 0.03), 
+  0 0 0 0 rgba(0, 0, 0, 0.2); 
+  grid-column: 1;
+  grid-row: 2 / span 5;
+  display:grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr repeat(2, 3fr)repeat(3, 2fr);
+    	.corners{
+    	padding: 10px;
+  		grid-row: 1;
+  		grid-column: 1 / span 4;
+  		display:grid;
+  		grid-template-columns: 1fr 1fr;
+  		grid-template-rows: 1fr;
+  			.notify{
+  				grid-column: 1;
+  				grid-row:	1;
+			}
+			.nav{
+  				grid-column: 2;
+  				grid-row:	1;
+  				justify-self: end;
+			}
+    }
+  		.profileinfo{
+  		padding: 30px 0 0 0;
+  		grid-row: 2;
+  		grid-column: 2 / span 2;
+  		display: grid;
+  		grid-template-columns: 1fr;
+  		grid-template-rows: 1fr repeat(2, auto);
+  		grid-gap: 10px;
+  			.pic{
+  				grid-column: 1;
+  				grid-row:	1;
+  				justify-self: center;
+			}
+			 .steve{
+				  margin:0;
+  				grid-column: 1;
+  				grid-row:	2;
+  				justify-self: center;
+  				align-self: start;
+			}
+			 .work-type{
+          font-size:16px;
+  				grid-column: 1;
+  				grid-row:	3;
+  				justify-self: center;
+			}
+
+  		}
+
+  		.calday{
+      padding: 50px 0 50px 0;
+  		grid-row: 3;
+  		grid-column: 2 / span 2;
+  		display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr repeat(2, auto);
+      grid-gap: 1px;
+        .flame{
+          grid-column:1;
+          grid-row: 1;
+          justify-self: center;
+        }
+        .calnumber{
+          grid-column:1;
+          grid-row: 2;
+          justify-self: center;
+        }
+        .textbtw{
+          margin:0;
+          grid-column:1;
+          grid-row: 3;
+          justify-self: center;
+
+        }
+
+  		}
+  		.Emily{
+  		grid-row: 4;
+  		grid-column: 2 / span 3;
+  		display:grid;
+  		grid-template-columns: 100px 1fr;
+      grid-template-rows: 30px auto ;
+      margin:0;
+      padding: 0 0 0 1em;
+        .purple{
+          grid-row: 1 / span 2;
+          grid-column: 1;
+          justify-self: center;
+        }
+        .Em{
+          grid-column: 2;
+          grid-row: 1 ;
+        }
+        .emnum{
+          grid-column: 2;
+          grid-row: 2 ;
+          margin: 0;
+        }
+  		}
+
+  		.Matthew{
+  		grid-row: 5;
+  		grid-column: 2 / span 3;
+  		display:grid;
+      grid-template-columns: 100px 1fr;
+      grid-template-rows: 30px auto ;
+      margin:0;
+      padding: 0 0 0 1em;
+
+        .green{
+          grid-row: 1 / span 2;
+          grid-column: 1;
+          justify-self: center;
+        }
+        .Matt{
+          grid-column: 2;
+          grid-row: 1 ;
+        }
+        .mattnum{
+          grid-column: 2;
+          grid-row: 2 ;
+          margin: 0;
+        }
+
+
+  		}
+
+  		.Messo{
+  		grid-row: 6;
+  		grid-column: 2 / span 3;
+      display:grid;
+      grid-template-columns: 100px 1fr;
+      grid-template-rows: 30px auto ;
+      margin:0;
+      padding: 0 0 0 1em;
+
+        .orange{
+          grid-row: 1 / span 2;
+          grid-column: 1;
+          justify-self: center;
+        }
+        .Rrache{
+          grid-column: 2;
+          grid-row: 1 ;
+        }
+        .rachenum{
+          grid-column: 2;
+          grid-row: 2 ;
+          margin: 0;
+        }
+      }
+
+}
+  .settings{
+          display:block;
+          padding:10px;
+          grid-column: 1;
+          grid-row: 6;    
+          align-self:end;  }
+ 
+ .moprofileinfo{
+  display:none;
+}     
+.mogear{
+  display:none;
+}
+}
+
+
+

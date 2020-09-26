@@ -1,0 +1,69 @@
+
+.graph{
+	display:none;
+}
+
+
+ @media screen and ( min-width: 40em)// tablet //desktop 
+{
+
+.graph {
+	display:block;
+  background: #f4f4f4;
+  padding: 0 3rem 1.3rem 1rem;
+  grid-column: 1 / span 3;
+  grid-row: 4;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.03), 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.line{
+	list-style: none;
+	display: grid;
+	grid-template-row: 1fr 1fr 1fr;
+	grid-template-column: repeat(3, 1fr);
+	margin:0;
+	.scatter{
+		grid-row:1;
+		grid-column: 1 / span 2;
+	}
+	.prograph{
+		color: #FBB03B;
+		display: grid;
+		grid-template-row: repeat(2, auto);
+		grid-template-column: repeat(2, 1fr);
+		grid-row:1;
+		grid-column: 2;
+		font-size: 2rem;
+		padding: 0 2rem 0 0;
+
+
+
+	.yours{
+		margin: -2rem 0 0 0;
+    	font-weight:$fat;
+		justify-self:end;
+		grid-row:1;
+		grid-column: 2;}
+	.avg{
+
+		margin: -4rem 0 0 0;
+		font-weight:$skinny;
+		justify-self:end;
+		grid-row:2;
+		grid-column: 2;}
+	
+	}
+		.graphgoal{
+		padding: 0 2rem 0 0;
+
+		font-weight:$fat;
+		font-size: 3rem;
+		margin: -3rem 0 1.5rem 0;
+		justify-self:end;
+		grid-row:3;
+		grid-column: 2;}
+
+}
+
+}
