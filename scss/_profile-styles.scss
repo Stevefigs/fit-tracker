@@ -37,30 +37,30 @@
 }
 
 .flame{
-
-  width: 140px;
-  height: auto;
+	
+  width: 130px;
 }
 
 .calnumber {
-	margin:-20px 0 0 0;
 	color: #F8A3A3;
 	padding: 0;
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: $regular;
 }
 
 .calorie {
 	color: #AFAFAF;
 	padding: 0;
-	font-size: 2rem;
+	font-size: 1rem;
+	margin:0;
 	font-weight: $skinny;
 }
 
 .purple, .green, .orange{
 	padding:0;
 	margin:0;
-	width: 70px;
+	max-width: 50px;
+	width:100%;
 	height:auto;
 
 }
@@ -68,7 +68,7 @@
 .cal{
 	color: #AFAFAF;
 	padding: 0;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: $skinny;
 }
 

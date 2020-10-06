@@ -1,35 +1,37 @@
+.fast{
+	grid-row:1;
+	grid-column:1;
+	margin:0;
+
+}
+
 .lastrec{
 	Font-size:1.25rem;
-		line-height:1.2em;
-		margin:-20px 0 0 0;
 		font-weight: $skinny;
 
 }
 
 .lbs{
-	line-height:20px;
-	Font-size:6rem;
+	padding:12px;
+	Font-size:4rem;
 	font-weight:$fat;
-	margin:0;
-		color: #F8A3A3;
+	color: #F8A3A3;
 
 }
 
 .df{
-	line-height:110px;
-	Font-size: 2rem;
+	padding: 0 0 0 2.5em;
+	Font-size: 1.5rem;
 	font-weight:$fat;
-	margin:0;
 		color: #F8A3A3;
 
 
 }
 
 .berl{
-	width:300px;
-	height:auto;
-		margin: -40px 0 0 0;
-
+	padding:0;
+	max-width:275px;
+	width:100%;
 }
 
 
@@ -38,22 +40,27 @@ p{
 }
 
 .bignum{
+	margin:0;
+	padding:0;
 	font-weight: $fat;
-	Font-size: 5rem;
+	Font-size: 4rem;
 	color: #F8A3A3;
 }
 
 .dots{
-width:600px;
+	margin: -20px 0 0 0;
+	padding:0;
+	max-width:500px;
+	width:100%;
 	height:auto;
-	margin: -.5em 0 -2.5em 0;
 }
 
 .watch{
-	margin: -2.5em -.5em 0 0;
-	width:210px;
+	padding:0;
+	margin:0;
+	width:100%;
+	max-width:120px;
 	height:auto;
-	justify-self:start;
 }
 
 .runner{
@@ -69,42 +76,42 @@ width:600px;
 	@media screen and ( min-width: 40em)// tablet //desktop 
 {
 
-	grid-row:1;
-	grid-column:1;
-    margin: -2.2em 0 -1em 0;
-	padding: 0 0 0 1em;
-	width: 130px;
+	padding: 0;
+	margin:0;
+	max-width:85px;
+	width: 100%;
 	height:auto;
 }
 }
 .biker{
-	margin: -10px 0 0 0;
-	width: 200px;
+	margin:0;
+	padding:0;
+	max-width:175px;
+	width: 100%;
 	height:auto;
 }
 .jumper{
 	grid-row:2;
 	grid-column:1;
     padding: 0 0 0 .5em;
-	width:240px; 
+	max-width:220px; 
+	width: 100%;
+	height:auto;
 	margin: -1em 0 0 0;
 
 
 
 	@media screen and ( min-width: 40em)// tablet //desktop 
 {
-	padding: 0 .5em 0 0 ;
-
-	grid-row:1;
-	grid-column:1;
-	width: 270px;
+	margin:0;
+	padding:0;
+	max-width:205px;
+	width: 100%;
 	height:auto;
-	margin: -2em 0 -.5em 0;
 }
 }
 
 .longfif{
-margin-top: 10px;
 Font-size: 1.5rem;
 font-weight: $bold;
 color:#FBB03B;
@@ -112,14 +119,20 @@ color:#FBB03B;
 }
 
 
-.five{
-margin:-2px 0 2px 0;
+.five {
 Font-size: 1.5rem;
 font-weight: $bold;
 color:#FBB03B;
 }
 
-.runcap{
+
+.goal{
+Font-size: 2rem;
+font-weight: $bold;
+color:#FBB03B;
+}
+
+.runcap, .wordup, .goalnum{
 line-height: .5em;
 margin:0;
 Font-size: 2rem;
@@ -127,44 +140,21 @@ font-weight: $skinny;
 color:#FBB03B;
 }
 
-.wordup{
-Font-size: 2rem;
-font-weight: $skinny;
-color:#FBB03B;
-}
-
-.sevenhun{
-line-height: .95em;
-padding-top: .4em;
+.sevenhun, .fourhun{
 margin:0;
 Font-size: 1.5rem;
 font-weight: $semi;
 color:#AFAFAF;
 }
 
-.fourhun{
-margin:0;
-Font-size: 1.5rem;
-font-weight: $semi;
-color:#AFAFAF;
-}
-
-.burn{
+.burn, .train{
 Font-size: 1.5rem;
 font-weight: $regular;
 color:#AFAFAF;
 }
 
-.tryit{
-	grid-column:1;
-	grid-row:1;
-	justify-self: center;
-	Font-size:1.5rem;
-	@media screen and ( min-width: 40em)// tablet //desktop 
-{
-	justify-self:start;
-}
-}
+
+
 .dur{
 	justify-self: center;
 	Font-size:1.5rem;	
@@ -186,55 +176,24 @@ color:#AFAFAF;
 	{
 			line-height:.5em;
 
-margin: 10px 0 0 0;
-Font-size: 3rem;
-font-weight: $bold;
-color:#AFAFAF;
-}
-}
-
-.train{
+padding: .2em 0;
 margin:0;
-Font-size: 2rem;
-font-weight: $regular;
+Font-size: 4rem;
+font-weight: $fat;
 color:#AFAFAF;
-line-height: 2.75rem;
+}
 }
 
-.goal{
-
-grid-row:1;
-grid-column:1;
-margin: 0;
-line-height: 30px;
-Font-size: 2rem;
-font-weight: $fat;
-color:#FBBC5A;
-justify-self:center;
-
-	emargin:-16px 0 0 0;
-	Font-size: 2rem;
-	font-weight: $fat;
-	color:#FBBC5A;
-	justify-self:start;
-
-	}
 	
 
-.goalnum{
-Font-size: 2rem;
-font-weight: $bold;
-color: #FBBC5A;
-}
 
-.feel{
+
+.feel, .sweat{
 	line-height:1.65rem;
 }
 
-.lasttitle, .future{
+.tryit, .lasttitle, .future, .fast, .maxout, .week,{
 
-	grid-column:1;
-	grid-row:1;
 	justify-self: center;
 	Font-size:1.5rem;
 
@@ -242,4 +201,8 @@ color: #FBBC5A;
 {
 	justify-self:start;
 }
+}
+
+.sweat, .long, .feel, .far{
+	justify-self:end;
 }
