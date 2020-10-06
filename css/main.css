@@ -360,6 +360,7 @@ main {
 
 @media screen and (min-width: 40em) {
   .graph {
+    align-items: center;
     padding: 1rem;
     margin: 0;
     display: grid;
