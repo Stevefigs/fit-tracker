@@ -27,7 +27,7 @@ display: grid;
 {
 
 .today {
-  padding:.5rem;
+  padding:0;
  margin:0 ;
   background: #f4f4f4;
   grid-column: 2;
@@ -53,9 +53,11 @@ display: grid;
     grid-column: 2; 
     align-self:center;
     justify-self:start;
+
   }
   }
     .mark{
+
       grid-row: 1;
     grid-column: 1; 
   align-self:end;
@@ -65,6 +67,7 @@ display: grid;
 
 
   .hiit{
+    padding: 0 0 .6rem 0;
     grid-row: 2;
       grid-column: 1; 
       align-self:start;
@@ -75,9 +78,7 @@ display: grid;
 
 
 }
-
-.train{
+.tryit{
+  padding:1rem 0 10px 12px;
 }
-
-
 

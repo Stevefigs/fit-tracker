@@ -297,7 +297,7 @@ main {
     grid-column: 1 / span 3;
     grid-row: 1;
     display: grid;
-    grid-template-columns: .75fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-rows: 1fr;
     margin: 0;
     align-items: center; } }
@@ -597,19 +597,17 @@ p {
 
 .biker {
   margin: 0;
-  padding: 0;
-  max-width: 175px;
+  max-width: 180px;
   width: 100%;
   height: auto; }
 
 .jumper {
+  margin: 0;
   grid-row: 2;
   grid-column: 1;
-  padding: 0 0 0 .5em;
   max-width: 220px;
   width: 100%;
-  height: auto;
-  margin: -1em 0 0 0; }
+  height: auto; }
   @media screen and (min-width: 40em) {
     .jumper {
       margin: 0;
@@ -629,6 +627,8 @@ p {
   color: #FBB03B; }
 
 .goal {
+  margin: 0;
+  padding: 0;
   Font-size: 2rem;
   font-weight: 700;
   color: #FBB03B; }
@@ -646,7 +646,13 @@ p {
   font-weight: 600;
   color: #AFAFAF; }
 
-.burn, .train {
+.train {
+  Font-size: 1.5rem;
+  font-weight: 400;
+  color: #AFAFAF;
+  line-height: 15px; }
+
+.burn {
   Font-size: 1.5rem;
   font-weight: 400;
   color: #AFAFAF; }
@@ -669,7 +675,7 @@ p {
       line-height: .5em;
       padding: .2em 0;
       margin: 0;
-      Font-size: 4rem;
+      Font-size: 3rem;
       font-weight: 800;
       color: #AFAFAF; } }
 
@@ -678,7 +684,8 @@ p {
 
 .tryit, .lasttitle, .future, .fast, .maxout, .week {
   justify-self: center;
-  Font-size: 1.5rem; }
+  Font-size: 1.5rem;
+  margin: 0; }
   @media screen and (min-width: 40em) {
     .tryit, .lasttitle, .future, .fast, .maxout, .week {
       justify-self: start; } }
@@ -709,7 +716,7 @@ p {
 
 @media screen and (min-width: 40em) {
   .today {
-    padding: .5rem;
+    padding: 0;
     margin: 0;
     background: #f4f4f4;
     grid-column: 2;
@@ -740,10 +747,14 @@ p {
     justify-self: center; }
 
   .hiit {
+    padding: 0 0 .6rem 0;
     grid-row: 2;
     grid-column: 1;
     align-self: start;
     justify-self: center; } }
+.tryit {
+  padding: 1rem 0 10px 12px; }
+
 .tomorrow {
   padding: 1rem;
   background: #f4f4f4;
@@ -764,7 +775,7 @@ p {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr; }
     .tomorrow .soon {
-      padding: 2rem 1rem 0 0;
+      padding: 2rem 1rem .5rem 0;
       margin: 0;
       list-style: none;
       display: grid;
